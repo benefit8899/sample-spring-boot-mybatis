@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<title>Home</title>
+<meta charset="UTF-8">
+<head>
+	<link rel="stylesheet" href="../css/comm.css" />
+</head>
+<body>
+	<div class="main-container">
+	Hello
+	<ul>
+		<li th:each="item : ${listAuthor}">
+			<span th:text="${item.id}"></span>
+			-
+			<span th:text="${item.name}"></span>
+			-
+			<span th:text="${item.birth}"></span>
+		</li>
+	</ul>
+	</div>
+</body>
+</html>
